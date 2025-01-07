@@ -113,7 +113,6 @@ UPDATE employees SET dept_id = 4 WHERE department = 'Marketing';
 - - - 
   
 ### Aggregation
-> Before doing the below section on Aggregation, go through [this tutorial](https://neon.tech/postgresql/postgresql-aggregate-functions).
 
 1. Calculate the average salary by department
 2. Find the department with the highest total salary
