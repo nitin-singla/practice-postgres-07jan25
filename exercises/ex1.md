@@ -111,17 +111,6 @@ UPDATE employees SET dept_id = 4 WHERE department = 'Marketing';
 4. (Advanced) Create a column showing TRUE if employee salary is above department average, FALSE otherwise
 
 - - - 
-
-### Joins
-> Before doing the below section on Joins, go through [this tutorial](https://neon.tech/postgresql/postgresql-tutorial/postgresql-joins).
-
-1. List all employees with their department details
-2. Show all departments and the number of employees in each
-3. Find all projects and their assigned employees
-4. List employees who haven't been assigned to any project
-5. Show departments that have no projects
-
-- - - 
   
 ### Aggregation
 > Before doing the below section on Aggregation, go through [this tutorial](https://neon.tech/postgresql/postgresql-aggregate-functions).
