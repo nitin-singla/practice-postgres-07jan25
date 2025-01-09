@@ -97,5 +97,5 @@
 15. ```sql
     SELECT email
     FROM customer
-    WHERE email LIKE first_name || '.' || last_name|| '@_%._%';
+    WHERE email NOT LIKE first_name || '.' || last_name|| '@_%._%';
     ```
