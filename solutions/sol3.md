@@ -51,7 +51,8 @@ GROUP BY c.customer_id;
 7. Average rental duration per customer:
 ```sql
 SELECT customer_id,
-       AVG(EXTRACT(EPOCH FROM (return_date - rental_date))/3600) AS avg_duration_hours
+       FLOOR(AVG(EXTRACT(EPOCH FROM (return_date - rental_date))/86400)) AS avg_duration_days,
+       FLOOR(MOD(AVG(EXTRACT(EPOCH FROM (return_date - rental_date))/3600), 24)) AS avg_duration_hours
 FROM rental
 WHERE return_date IS NOT NULL
 GROUP BY customer_id;
