@@ -45,7 +45,7 @@ SELECT c.customer_id,
        EXTRACT(day FROM MAX(r.rental_date) - c.create_date) AS days_since_creation
 FROM customer c
 JOIN rental r ON c.customer_id = r.customer_id
-GROUP BY c.customer_id, c.create_date;
+GROUP BY c.customer_id;
 ```
 
 7. Average rental duration per customer:
